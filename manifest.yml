@@ -1,0 +1,10 @@
+---
+applications:
+  - name: nutrix-registry-service
+    path: target/registry-service-0.0.1-SNAPSHOT.jar
+    memory: 1GB
+    host: nutrix-registry
+    instances: 1
+    buildpacks:
+      - java_buildpack
+    stack: cflinuxfs3
